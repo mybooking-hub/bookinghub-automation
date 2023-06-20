@@ -1,0 +1,30 @@
+{
+  "name": "bookinghub-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "e2e": "cypress open",
+    "cy:runAll": "cypress run --env -r mocha-allure-reporter",
+    "cy:runJenkins": "NO_COLOR=1 cypress run --config video=false,screenshotOnRunFailure=false -r mocha-allure-reporter allure=true",
+    "cy:runSpec": "cypress run --spec cypress/e2e/spec.cy.js --env -r mocha-allure-reporter",
+    "cy:runReport": "allure generate allure-results --clean -o allure-report && allure open allure-report",
+    "cy:runHeadless": "NO_COLOR=1 cypress run --config video=false,screenshotOnRunFailure=false -r mocha-allure-reporter",
+    "cy:genReport": "allure generate allure-results --clean -o allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@shelex/cypress-allure-plugin": "^2.35.2",
+    "allure-commandline": "^2.21.0",
+    "cypress-fill-command": "^1.0.2",
+    "cypress-xpath": "^2.0.1",
+    "mocha": "^10.2.0"
+  },
+  "devDependencies": {
+    "cypress": "^12.15.0",
+    "mocha-allure-reporter": "^1.4.0"
+  }
+}

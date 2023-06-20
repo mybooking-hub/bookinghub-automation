@@ -1,0 +1,15 @@
+{
+  "email": "james@bond.com",
+  "password": "1234567",
+  "invalid-email": "aa@mail.com",
+  "invalid-password": "1234567",
+  "h-body": "Fixtures are a great way to mock data for responses to routes",
+  "h-hero-text": "A fully featured Personalized Booking Assistant",
+  "book-auth-error-body": "You need to log in to be able to proceed forward with the booking. Click on the Sign in / Register button at the top right corner of the screen",
+  "success-auth-notification-title": "Welcome back to the My Seatings platform, james@bond.com ! ",
+  "success-auth-notification-body": "You can start navigating around our platform for watch for performance and ticket booking",
+  "error-auth-title": "Error !",
+  "error-auth-body": "User not found",
+  "logout-notificatioin-title": "Bye bye !",
+  "logout-notification-body": "Hope we will get to see you soon. Loggged out successfully !"
+}
